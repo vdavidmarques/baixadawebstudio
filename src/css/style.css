@@ -471,7 +471,7 @@ img {
 }
 
 .bg-blue-hard-light {
-  background-color: #041420;
+  background-color: #003b68;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -494,40 +494,46 @@ img {
 }
 
 .header-menu-itens {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   align-items: center;
-  justify-content: space-between;
   position: relative;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1.25rem; 
+  padding-bottom: 1.25rem;
 }
-@media screen and (min-width: 1024px) {
-  .header-menu-itens {
-    column-gap: 1.5rem;
-  }
+
+.header-menu-itens .logotype, .header-menu-itens .open-menu-mobile{
+  grid-column: span 6 / span 6;
 }
-@media screen and (min-width: 1280px) {
-  .header-menu-itens {
-    justify-content: inherit;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    column-gap: 3.5rem;
-  }
-}
+
 .header-menu-itens .logo {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.75rem;
   line-height: 2.5rem;
-  font-size: 1.875rem;
 }
+
+.header-menu-itens .open-menu-mobile{
+  display: flex;
+  justify-content: end;
+}
+
 @media screen and (min-width: 1024px) {
+  .header-menu-itens .logotype, .header-menu-itens .open-menu-mobile{
+    grid-column: span 6 / span 6;
+  }
+
   .header-menu-itens .logo {
-    font-size: 40px;
+    font-size: 1.875rem;
+    display: flex;
+  }
+
+  .header-menu-itens .menu-items .bg-close-menu-mobile {
+    display: none;
   }
 }
+
 .header-menu-itens .menu-items {
   position: fixed;
   top: 0;
@@ -539,13 +545,24 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
+  grid-column: span 2 / span 2;
 }
+
 @media screen and (min-width: 1280px) {
   .header-menu-itens .menu-items {
     position: relative;
     display: flex;
     justify-content: end;
+    align-items: center;
     row-gap: 1.25rem;
+    grid-column: span 8 / span 8;
+  }
+
+  .header-menu-itens .logotype{
+    grid-column: span 4 / span 4;
+  }
+  .header-menu-itens .open-menu-mobile{
+    display: none;
   }
 }
 .header-menu-itens .menu-items nav#custom-header-menu {
@@ -604,9 +621,10 @@ img {
     ul#custom-header-menu
     li
     a {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 1023px) {
   .header-menu-itens
     .menu-items
@@ -617,11 +635,13 @@ img {
     color: #ccd0cf;
   }
 }
+
 .header-menu-itens .menu-items.openned {
   background-color: #041420;
   padding: 1.25rem;
   display: flex;
 }
+
 .header-menu-itens .menu-items .bg-close-menu-mobile {
   background-size: cover;
   background-repeat: no-repeat;
@@ -637,11 +657,7 @@ img {
   height: 2.25rem;
   background: url("../../src/icons/close-menu-icon.svg");
 }
-@media screen and (min-width: 1024px) {
-  .header-menu-itens .menu-items .bg-close-menu-mobile {
-    display: none;
-  }
-}
+
 .header-menu-itens .open-menu-mobile .bg-menu-mobile {
   background: url("../../src/icons/menu-icon.svg");
   width: auto;
@@ -654,6 +670,7 @@ img {
   text-indent: -624.9375rem;
   border: none;
 }
+
 @media screen and (min-width: 1280px) {
   .header-menu-itens .open-menu-mobile .bg-menu-mobile {
     display: none;
@@ -742,6 +759,7 @@ footer .scroll-to-top-btn {
   width: 1.875rem;
   height: 1.875rem;
   object-fit: contain;
+  z-index: 50;
 }
 @media screen and (min-width: 1024px) {
   footer .scroll-to-top-btn {
@@ -790,28 +808,97 @@ footer .scroll-to-top-btn {
   position: relative;
   height: 25rem;
 }
+
 @media screen and (min-width: 1024px) {
   .swiper-container {
-    height: 31.25rem;
+    height: 43.75rem;
   }
 }
-.swiper-container .swiper-slide a {
+
+.swiper-container a {
   margin-top: 24px;
   text-decoration: none;
 }
-.swiper-container .swiper-slide .default-heading-title {
+.swiper-container .default-heading-title {
   color: #fff;
   position: absolute;
-  top: 0;
+  top: 5.625rem;
   left: 0;
   z-index: 10;
-  justify-content: center;
   right: 0;
 }
 
 .banners .default-heading-title {
   padding: 0 1rem;
 }
+
+.waves{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+.wave{
+  animation: waveAnimation 3s ease-in-out infinite;
+  width: 100%;
+}
+
+ @keyframes waveAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+} 
+
+.wave-1{
+  background-image: url("../../src/images/wave-1.svg");
+}
+
+.wave-1a, .wave-1, .wave-1b{
+  background-repeat: no-repeat;
+  bottom: -2.1875rem;
+  height: 5.625rem;
+  z-index: 50;
+}
+
+.wave-1a, .wave-1b{
+  background-image: url("../../src/images/wave-1a.svg");
+}
+
+.wave-1a{
+  top: -2.8125rem;
+}
+
+.wave-1b{
+  bottom: -50px;
+  transform: rotate(180deg);
+}
+
+.wave-2{
+  bottom: -1.875rem;
+  height: 15rem;
+  z-index: 30;
+}
+
+.wave-3{
+  bottom: 0;
+  height: 20.8125rem;
+  z-index: 20;
+}
+
+.wave-4{
+  bottom: 0;
+  height: 20.625rem;
+  z-index: 10;
+}
+
 @media screen and (min-width: 640px) {
   .banners .default-heading-title {
     max-width: 40rem;
@@ -829,8 +916,13 @@ footer .scroll-to-top-btn {
     padding: 0 2.5rem;
     max-width: 64rem;
   }
+
   .banners .default-heading-title h1 {
     max-width: 56.25rem;
+  }
+
+  .waves{
+    display: block;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1029,8 +1121,10 @@ footer .scroll-to-top-btn {
   font-family: "Rubik", sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
-  margin-bottom: 9.375rem;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
+
 @media screen and (min-width: 1024px) {
   .about .default-heading-title {
     font-size: 3.4375rem;
@@ -1167,8 +1261,9 @@ footer .scroll-to-top-btn {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background: rgb(0,0,70);
-  background: linear-gradient(180deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 100%);
+  background: #175c91;
   color: #fff;
+  position: relative;
 }
 
 .offer a.button{
@@ -1202,6 +1297,18 @@ footer .scroll-to-top-btn {
   margin-bottom: 1rem;
 }
 
+.offer .local-value{
+  margin-top: 2.5rem;
+  display: grid;
+}
+
+.offer .local-value .heading-title{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
 @media screen and (min-width: 1024px) {
   .offer .heading-title h1,
   .offer .heading-title h2,
@@ -1210,6 +1317,17 @@ footer .scroll-to-top-btn {
     font-size: 3.4375rem;
     text-indent: -1px;
     line-height: 3.5rem;
+  }
+
+  .offer .local-value{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-top: 5rem;
+  }
+
+  .offer .local-value .content{
+    grid-column: span 8 / span 8;
+    grid-column-start: 3;
   }
 }
 
@@ -1232,7 +1350,7 @@ footer .scroll-to-top-btn {
 }
 
 .ease-in-out{
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .ease-in-out:hover{
@@ -1243,7 +1361,7 @@ footer .scroll-to-top-btn {
   .offer .packages {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     row-gap: 0;
-    column-gap: 1.25rem;
+    column-gap: 40px;
     align-items: center;
   }
 
@@ -1264,7 +1382,6 @@ footer .scroll-to-top-btn {
 
   } 
 }
-
 
 .offer .packages .package .option{
   text-align: center;
@@ -1288,7 +1405,7 @@ footer .scroll-to-top-btn {
 .offer .packages .package .options {
   display: grid;
   row-gap: 1.25rem;
-  column-gap: 2.5rem;
+  column-gap: 1.25rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1308,6 +1425,7 @@ footer .scroll-to-top-btn {
   width: 3.125rem;
   height: 3.125rem;
   margin-bottom: 10px;
+  animation: waveAnimation 3s ease-in-out infinite;
 }
 .offer .packages .package .options .option .text h1,
 .offer .packages .package .options .option .text h2,
@@ -1329,18 +1447,13 @@ footer .scroll-to-top-btn {
 @media screen and (min-width: 1024px) {
   .hiring {
     padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 }
 .hiring .title {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
-@media screen and (min-width: 1024px) {
-  .hiring .title {
-    margin-bottom: 6.25rem;
-  }
-}
+
 .hiring .title h1,
 .hiring .title h2 {
   text-transform: uppercase;
