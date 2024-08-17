@@ -410,11 +410,6 @@ img {
   background-size: cover;
   position: absolute;
   width: 100%;
-  display: none;
-  
-  @media screen and (min-width: $breakpoint-lg) {
-    display: block;
-  }
 }
 
 .wave{
@@ -436,17 +431,25 @@ img {
 
 .wave-1{
   background-image: url("../../library/images/wave-1.svg");
+  bottom: -8.1875rem;
+  @media screen and (min-width: $breakpoint-md){
+    bottom: -9.1875rem;
+  }
+
+  @media screen and (min-width: $breakpoint-lg){
+    bottom: -2.1875rem;
+  }
 }
 
 .wave-1a, .wave-1, .wave-1b{
   background-repeat: no-repeat;
-  bottom: -2.1875rem;
   height: 5.625rem;
   z-index: 50;
 }
 
 .wave-1a, .wave-1b{
   background-image: url("../../library/images/wave-1a.svg");
+  bottom: -2.1875rem;
 }
 
 .wave-1a{
@@ -459,21 +462,43 @@ img {
 }
 
 .wave-2{
-  bottom: -1.875rem;
+  bottom: -5.875rem;
   height: 15rem;
   z-index: 30;
+  
+  @media screen and (min-width: $breakpoint-md){
+    bottom: -5.875rem;
+  }
+  
+  @media screen and (min-width: $breakpoint-lg){
+    bottom: -1.875rem;
+  }
 }
 
 .wave-3{
   bottom: 0;
   height: 20.8125rem;
   z-index: 20;
+  display: none;
+
+  @media screen and (min-width: $breakpoint-lg){
+    bottom: 0;
+    display: block;
+  }
 }
 
 .wave-4{
-  bottom: 0;
+  bottom: -7.5rem;
   height: 20.625rem;
   z-index: 10;
+
+  @media screen and (min-width: $breakpoint-md){
+    bottom: -7.5rem;
+  }
+
+  @media screen and (min-width: $breakpoint-lg){
+    bottom: 0;
+  }
 }
 
 .pointer-events-none{

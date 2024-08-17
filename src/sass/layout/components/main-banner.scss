@@ -75,7 +75,11 @@
 
 .swiper-container {
   position: relative;
-  height: 25rem;
+  height: 34.375rem;
+  
+  @media screen and (min-width: $breakpoint-md){
+    height: 25rem;
+  }
   
   @media screen and (min-width: $breakpoint-lg) {
     height: 43.75rem;
@@ -92,7 +96,7 @@
     left: 0;
     z-index: 10;
     right: 0;
-    top: 3.125rem;
+    top: 1.125rem;
     
     @media screen and (min-width: $breakpoint-lg) {
       top: 5.625rem;

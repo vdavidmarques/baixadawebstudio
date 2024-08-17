@@ -495,12 +495,6 @@ img {
   background-size: cover;
   position: absolute;
   width: 100%;
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .waves {
-    display: block;
-  }
 }
 
 .wave {
@@ -521,17 +515,28 @@ img {
 }
 .wave-1 {
   background-image: url("../../library/images/wave-1.svg");
+  bottom: -8.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .wave-1 {
+    bottom: -9.1875rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wave-1 {
+    bottom: -2.1875rem;
+  }
 }
 
 .wave-1a, .wave-1, .wave-1b {
   background-repeat: no-repeat;
-  bottom: -2.1875rem;
   height: 5.625rem;
   z-index: 50;
 }
 
 .wave-1a, .wave-1b {
   background-image: url("../../library/images/wave-1a.svg");
+  bottom: -2.1875rem;
 }
 
 .wave-1a {
@@ -544,21 +549,48 @@ img {
 }
 
 .wave-2 {
-  bottom: -1.875rem;
+  bottom: -5.875rem;
   height: 15rem;
   z-index: 30;
+}
+@media screen and (min-width: 768px) {
+  .wave-2 {
+    bottom: -5.875rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wave-2 {
+    bottom: -1.875rem;
+  }
 }
 
 .wave-3 {
   bottom: 0;
   height: 20.8125rem;
   z-index: 20;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wave-3 {
+    bottom: 0;
+    display: block;
+  }
 }
 
 .wave-4 {
-  bottom: 0;
+  bottom: -7.5rem;
   height: 20.625rem;
   z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .wave-4 {
+    bottom: -7.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wave-4 {
+    bottom: 0;
+  }
 }
 
 .pointer-events-none {
@@ -903,7 +935,12 @@ footer .scroll-to-top-btn {
 
 .swiper-container {
   position: relative;
-  height: 25rem;
+  height: 34.375rem;
+}
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    height: 25rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .swiper-container {
@@ -920,7 +957,7 @@ footer .scroll-to-top-btn {
   left: 0;
   z-index: 10;
   right: 0;
-  top: 3.125rem;
+  top: 1.125rem;
 }
 @media screen and (min-width: 1024px) {
   .swiper-container .default-heading-title {
