@@ -21,9 +21,15 @@
     overflow: hidden;
     background-image: url("../../library/images/profissionais.jpg");
     background-size: cover;
+    height: 21.875rem;
+
+    @media (min-width: $breakpoint-md) {
+      height: 400px;
+    }
 
     @media (min-width: $breakpoint-lg) {
       grid-column: span 6 / span 6;
+      height: 100%;
     }
 
     img {

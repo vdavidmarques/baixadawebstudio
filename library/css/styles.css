@@ -948,10 +948,17 @@ footer .scroll-to-top-btn {
   overflow: hidden;
   background-image: url("../../library/images/profissionais.jpg");
   background-size: cover;
+  height: 21.875rem;
+}
+@media (min-width: 768px) {
+  .about .bg-image {
+    height: 400px;
+  }
 }
 @media (min-width: 1024px) {
   .about .bg-image {
     grid-column: span 6/span 6;
+    height: 100%;
   }
 }
 .about .bg-image img {
