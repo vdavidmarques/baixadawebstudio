@@ -13,8 +13,9 @@
     padding-top: 5rem;
     padding-bottom: 5rem;   
   }
+  
   a.button {
-    margin-top: 2.5rem;
+    margin-top: 1.25rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -69,11 +70,12 @@
 .offer .packages {
   display: grid;
   row-gap: 1.25rem;
+  overflow: hidden;
 
   @media screen and (min-width: $breakpoint-xl) {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     row-gap: 0;
-    column-gap: 40px;
+    column-gap: 2.5rem;
     align-items: center;
   }
 
@@ -87,9 +89,15 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+
   .content {
-    img.image-content {
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+
+    img.image-content, .bg-blue-hard-light{
       height: 25rem;
+
       @media screen and (min-width: $breakpoint-xl) {
         height: 100%;
       }
@@ -98,8 +106,6 @@
     @media screen and (min-width: $breakpoint-xl) {
       grid-column: span 5 / span 5;
       height: 100%;
-      overflow: hidden;
-      border-radius: 0.625rem;
     }
   }
 }
@@ -112,6 +118,10 @@
   padding: 1.25rem;
   border-radius: 0.625rem;
   position: relative;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    padding: 1.5625rem;
+  }
 }
 
 .offer .packages .package .title h1,
