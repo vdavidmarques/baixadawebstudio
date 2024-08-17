@@ -1,0 +1,24 @@
+@import "../../helpers/variables.scss";
+@import "../../helpers/mixins.scss";
+
+.works{
+    position: relative;
+    padding: 5rem 0;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        padding-top: 15rem;
+    }
+
+    .lists{
+        row-gap: 20px;
+        @media screen and (min-width: $breakpoint-lg) {
+            column-gap: 2.5rem;
+        }
+        
+        .list{
+            border-radius: 1.25rem;
+            overflow: hidden;
+        }
+
+    }
+}

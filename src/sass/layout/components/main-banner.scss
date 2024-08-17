@@ -1,6 +1,52 @@
 @import "../../helpers/variables.scss";
 @import "../../helpers/mixins.scss";
 
+
+.banner .default-heading-title h1,
+.banner .default-heading-title h2,
+.banner .default-heading-title h3 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .banner .default-heading-title h1,
+  .banner .default-heading-title h2,
+  .banner .default-heading-title h3,
+  .banner .default-heading-title p,
+  .banner .button {
+    margin-left: 8%;
+  }
+  .banner .default-heading-title h1,
+  .banner .default-heading-title h2,
+  .banner .default-heading-title h3 {
+    width: 55%;
+  }
+  .banner .default-heading-title p {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .banner .default-heading-title h1,
+  .banner .default-heading-title h2,
+  .banner .default-heading-title h3,
+  .banner .default-heading-title p,
+  .banner .button {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-1_5xl) {
+  .banner .default-heading-title h1,
+  .banner .default-heading-title h2,
+  .banner .default-heading-title h3,
+  .banner .default-heading-title p,
+  .banner .button {
+    margin-left: 0;
+  }
+}
+
 .banners .default-heading-title {
   padding: 0 1rem;
 

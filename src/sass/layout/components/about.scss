@@ -4,108 +4,114 @@
 .about {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  position: relative;
 
-  @media screen and (min-width: $breakpoint-lg) {
+  @media screen and (min-width: $breakpoint-xl) {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  
+  .about-article{
+    background-color: $blue;
   }
 
   .relative {
     position: relative;
     overflow: hidden;
+    align-items: center;
   }
 
-  .bg-image {
+  .wave-1a{
+    top: 0;
+  }
+  
+  .wave-1b{
+    bottom: 0;
+  }
+
+  .image{
     grid-column: span 12 / span 12;
     position: relative;
     overflow: hidden;
-    background-image: url("../../library/images/profissionais.jpg");
-    background-size: cover;
+    border-radius: 1.25rem;
     height: 21.875rem;
+    margin-top: 5rem;
 
     @media (min-width: $breakpoint-md) {
-      height: 400px;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      grid-column: span 6 / span 6;
-      height: 100%;
-    }
-
-    img {
-      width: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
       height: 25rem;
     }
+    
+    @media (min-width: $breakpoint-xl) {
+      margin-top: 0;
+      grid-column: span 6 / span 6;
+    }
+
+    .bg-image {
+      background-image: url("../../library/images/profissionais.jpg");
+      background-size: cover;
+      width: 100%;
+      z-index: 10;
+      height: 100%;
+    }
   }
-}
 
-.about .blue-bg {
-  background-color: $blue;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.about .default-heading-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: $font-rubik;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  margin-bottom: 80px;
-  margin-top: 80px;
-
-  @media screen and (min-width: $breakpoint-lg) {
-    font-size: 3.4375rem;
-    text-indent: -1px;
-    line-height: 3.5rem;
+  .default-heading-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-rubik;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  
+    @media screen and (min-width: $breakpoint-xl) {
+      font-size: 3.4375rem;
+      text-indent: -1px;
+      line-height: 3.5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
-}
 
-.about .content {
-  grid-column: span 12 / span 12;
-  background-color: $blue;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  z-index: 20;
-  row-gap: 2.5rem;
-  padding: 5rem 1rem;
-
-  @media screen and (min-width: $breakpoint-lg) {
-    grid-column: span 5 / span 5;
-    grid-column-start: 7;
+  .content {
+    grid-column: span 12 / span 12;
+    background-color: $blue;
+    color: $white;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: baseline;
-    padding-left: 2.5rem;
+    z-index: 20;
+    row-gap: 2.5rem;
+    padding: 5rem 1rem;
+  
+    @media screen and (min-width: $breakpoint-xl) {
+      grid-column: span 5 / span 5;
+      grid-column-start: 7;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: baseline;
+      padding-left: 2.5rem;
+    }
+  
+    @media screen and (min-width: $breakpoint-1_5xl) {
+      grid-column: span 6 / span 6;
+      grid-column-start: 7;
+    }
+  
+    p {
+      line-height: 1.875rem;
+      margin-bottom: 0.625rem;
+    }
+
+    .button-first {
+      display: block;
+    }
   }
 
-  @media screen and (min-width: $breakpoint-1_5xl) {
-    grid-column: span 4 / span 4;
-    grid-column-start: 8;
-  }
-
-  p {
-    line-height: 1.875rem;
-  }
-}
-
-.about .content .button-first {
-  display: block;
-}
-
-.about .image-text {
-  @media screen and (min-width: $breakpoint-1_5xl) {
-    min-height: 37.5rem;
+  .image-text {
+    @media screen and (min-width: $breakpoint-1_5xl) {
+      min-height: 37.5rem;
+    }
   }
 }
