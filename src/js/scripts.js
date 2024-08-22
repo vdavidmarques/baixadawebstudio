@@ -75,3 +75,26 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll);
   handleScroll(); // Trigger once on load to show blocks in view
 });
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.25,
+  centeredSlides: true,
+  spaceBetween: 30,
+  autoHeight: true,
+  autoplay: {
+    delay: 7000,
+  },
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 1.25,
+    }
+  }
+});

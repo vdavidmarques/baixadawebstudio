@@ -3,16 +3,22 @@
 
 .works{
     position: relative;
-    padding: 5rem 0;
+    padding-top: 9.375rem;
+    padding-bottom: 5rem;
 
     @media screen and (min-width: $breakpoint-lg) {
         padding-top: 15rem;
     }
 
     .lists{
-        row-gap: 20px;
-        @media screen and (min-width: $breakpoint-lg) {
+        row-gap: 2.5rem;
+        display: grid;
+        @include grid-cols-1;
+        
+        @media screen and (min-width: $breakpoint-md) {
+            @include grid-cols-2;
             column-gap: 2.5rem;
+            row-gap: 1.25rem;
         }
         
         .list{
