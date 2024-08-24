@@ -64,15 +64,10 @@
       
       @media screen and (min-width: $breakpoint-xl) {
         @include col-span-5;
-        height: 100%;
       }
 
-      img.image-content, .bg-blue-hard-light{
-        height: 25rem;
-  
-        @media screen and (min-width: $breakpoint-xl) {
-          height: 100%;
-        }
+      img.image-content{
+        height: 100%;
       }     
     }
     .package {

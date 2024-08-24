@@ -1,0 +1,54 @@
+{
+  "index": {
+    "title": "Por Que Ter um Site Profissional?",
+    "subtitle": "Como Funciona",
+    "description": "",
+    "lists": [
+      {
+        "title": "Aumente Sua Visibilidade",
+        "description": "Um site bem construído aumenta sua presença online e atrai mais clientes.",
+        "icon": "aumente-sua-visibilidade.svg"
+      },
+      {
+        "title": "Credibilidade",
+        "description": "Sites profissionais passam confiança e credibilidade para seus clientes.",
+        "icon": "certificate-online-achievement.svg"
+      },
+      {
+        "title": "Facilidade de Contato",
+        "description": "Facilite o contato com seus clientes através de formulários, WhatsApp e redes sociais integradas.",
+        "icon": "facilidade-de-contato.svg"
+      }
+    ]
+  },
+
+  "sites-para-marcenarias": {
+    "title": "Aumente sua Visibilidade e Atraia Mais Clientes ",
+    "subtitle": "",
+    "description": "Na era digital, <strong>ter uma presença online é essencial para qualquer negócio</strong>, inclusive para marcenarias. Um site profissional permite que sua empresa seja encontrada facilmente por clientes que buscam por serviços de marcenaria de qualidade na sua região. Deixe a Baixada Web Studio criar o site perfeito para sua marcenaria e ajude seu negócio a crescer",
+    "lists": [
+      {
+        "title": "Atraia Novos Clientes",
+        "description": "Um site bem planejado e otimizado  faz com que sua marcenaria apareça nas <strong>primeiras posições do Google</strong>, atraindo mais visitas de clientes potenciais.",
+        "icon": "presenca-online.svg"
+      },
+      {
+        "title": "Facilite o contato com clientes",
+        "description": "Com <strong>integração de WhatsApp</strong>, formulários de contato e links para redes sociais, seus clientes podem se conectar com você de forma rápida e fácil.",
+        "icon": "facilidade-de-contato.svg"
+      },
+      {
+        "title": "Aumente as oportunidades de vendas",
+        "description": "<strong>Mostre seus melhores projetos</strong> e inspire confiança nos visitantes. Fotos de alta qualidade e descrições detalhadas farão seus serviços se destacarem.",
+        "icon": "aumento-de-vendas.svg"
+      }
+    ]
+  },
+
+  "sites-para-gesseiros": {
+    "title": "Sites para Gesseiros",
+    "subtitle": "Desenvolvimento Web para Profissionais da Construção",
+    "image": "gesseiros-banner.jpg",
+    "cta": "Confira as Vantagens"
+  }
+}

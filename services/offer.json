@@ -1,0 +1,77 @@
+{
+  "index": {
+    "title": "O Que fazemos?",
+    "image": "o-que-oferecemos-baixada-web-studio.jpg",
+    "lists": [
+      {
+        "title": "Desenvolvimento de Sites para Marcenarias",
+        "description": "Crie um site profissional para sua marcenaria, destacando seus projetos artesanais e serviços sob medida. Mostre sua expertise em móveis personalizados e atraia novos clientes com um design moderno e funcional.",
+        "button-label": "Exiba seus projetos"
+      },
+      {
+        "title": "Sites Sob Medida para Gesseiros",
+        "description": "Desenvolvemos sites que realçam o talento dos gesseiros. Mostre suas obras com galerias de imagens e depoimentos de clientes satisfeitos, garantindo mais visibilidade para o seu trabalho e novas oportunidades de negócios.",
+        "button-label": "Destaque Seu Trabalho"
+      },
+      {
+        "title": "Sites para Vidraçarias",
+        "description": "Crie um site que reflita a transparência e a qualidade dos seus serviços de vidraçaria. Apresente seus produtos, como portas, janelas e espelhos, com uma navegação fácil e um design que impressiona.",
+        "button-label": "Apresente Sua Vidraçaria"
+      },
+      {
+        "title": "Sites para Escritórios de Advocacia",
+        "description": "Desenvolva um site profissional para o seu escritório de advocacia, destacando suas áreas de atuação e qualificações. Facilite o contato com clientes e transmita credibilidade desde o primeiro acesso.",
+        "button-label": "Fortaleça Sua Presença Jurídica"
+      },
+      {
+        "title": "Sites para Eletricistas",
+        "description": "Crie um site que destaque sua experiência e competência como eletricista. Apresente seus serviços de forma clara e objetiva, e ofereça aos clientes uma maneira fácil de solicitar orçamentos e agendar visitas.",
+        "button-label": "Ilumine Seu Negócio"
+      }
+    ]
+  },
+
+  "sites-para-marcenarias": {
+    "title": "Mostre os Serviços Oferecidos",
+    "image": "servicos-de-marcenaria.jpg",
+    "lists": [
+      {
+        "title": "Móveis Planejados",
+        "description": "Soluções sob medida para qualquer ambiente, com foco em funcionalidade e estética.",
+        "button-label": "Exiba seus Móveis"
+      },
+      {
+        "title": "Reformas e Manutenção",
+        "description": "Renove e prolongue a vida útil dos seus móveis com serviços de alta qualidade.",
+        "button-label": "Reforme já seu móvel"
+      },
+      {
+        "title": "Consultoria Personalizada",
+        "description": "Planejamos e desenvolvemos projetos exclusivos, desde a concepção até a instalação final.",
+        "button-label": "Tire suas dúvidas"
+      }
+    ]
+  },
+
+  "sites-para-gesseiros": {
+    "title": "Sites para Gesseiros",
+    "image": "o-que-oferecemos-baixada-web-studio.jpg",
+    "lists": [
+      {
+        "title": "Atraia Novos Clientes",
+        "description": "Um site bem planejado e otimizado  faz com que sua marcenaria apareça nas <strong>primeiras posições do Google</strong>, atraindo mais visitas de clientes potenciais.",
+        "button-label": "Exiba seus projetos"
+      },
+      {
+        "title": "Facilite o contato com clientes",
+        "description": "Com <strong>integração de WhatsApp</strong>, formulários de contato e links para redes sociais, seus clientes podem se conectar com você de forma rápida e fácil.",
+        "button-label": "Exiba seus projetos"
+      },
+      {
+        "title": "Aumente as oportunidades de vendas",
+        "description": "<strong>Mostre seus melhores projetos</strong> e inspire confiança nos visitantes. Fotos de alta qualidade e descrições detalhadas farão seus serviços se destacarem.",
+        "button-label": "Exiba seus projetos"
+      }
+    ]
+  }
+}

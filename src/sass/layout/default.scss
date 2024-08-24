@@ -198,6 +198,10 @@ a[href^="tel"] {
   text-decoration: none;
 }
 
+strong{
+  font-weight: 700;
+}
+
 [aria-current]:not([aria-current="false"]) {
   color: #9babab !important;
 }

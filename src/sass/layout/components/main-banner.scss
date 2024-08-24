@@ -1,49 +1,41 @@
 @import "../../helpers/variables.scss";
 @import "../../helpers/mixins.scss";
 
+.banners{
+  overflow-y: hidden;
+}
 
 .banner .default-heading-title h1,
 .banner .default-heading-title h2,
 .banner .default-heading-title h3 {
   margin-bottom: 1rem;
   text-transform: uppercase;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 55%;
+
+  }
 }
 
-@media screen and (min-width: $breakpoint-lg) {
-  .banner .default-heading-title h1,
-  .banner .default-heading-title h2,
-  .banner .default-heading-title h3,
-  .banner .default-heading-title p,
-  .banner .button {
+.banner .default-heading-title h1,
+.banner .default-heading-title h2,
+.banner .default-heading-title h3,
+.banner .default-heading-title p,
+.banner .button {
+  @media screen and (min-width: $breakpoint-lg) {
     margin-left: 8%;
   }
-  .banner .default-heading-title h1,
-  .banner .default-heading-title h2,
-  .banner .default-heading-title h3 {
-    width: 55%;
-  }
-  .banner .default-heading-title p {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: $breakpoint-xl) {
-  .banner .default-heading-title h1,
-  .banner .default-heading-title h2,
-  .banner .default-heading-title h3,
-  .banner .default-heading-title p,
-  .banner .button {
+  @media screen and (min-width: $breakpoint-xl) {
     margin-left: 5%;
   }
+  @media screen and (min-width: $breakpoint-1_5xl) {
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: $breakpoint-1_5xl) {
-  .banner .default-heading-title h1,
-  .banner .default-heading-title h2,
-  .banner .default-heading-title h3,
-  .banner .default-heading-title p,
-  .banner .button {
-    margin-left: 0;
+.banner .default-heading-title p {
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 40%;
   }
 }
 

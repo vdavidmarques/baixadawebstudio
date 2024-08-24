@@ -22,9 +22,16 @@
         }
         
         .list{
-            border-radius: 1.25rem;
-            overflow: hidden;
-        }
+            .image{
+                border-radius: 1.25rem;
+                overflow: hidden;
+                max-height: 18.75rem;
+            }
 
+            .text{
+                margin-top: 2.5rem;
+                color: $blue;
+            }
+        }
     }
 }

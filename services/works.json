@@ -1,0 +1,56 @@
+{
+  "index": {
+    "title": "Nossos Clientes",
+    "lists": [
+      {
+        "link": "https://consultoriavidasegura.com/",
+        "image": "consultoria-vida-segura.png",
+        "alt":"Consultoria Vida Segura",
+        "text": ""
+      },
+      {
+        "link": "https://vdavidmarques.github.io/portfolio/php/cloudaitech/",
+        "image": "cloudtechai.jpg",
+        "alt":"CloudTech Ai",
+        "text": ""
+      }
+    ]
+  },
+
+  "sites-para-marcenarias": {
+    "title": "Mostre o Que Seus Clientes Dizem:",
+    "lists": [
+      {
+        "link": "",
+        "image": "cobertura-de-tratamentos-sulamerica.jpg",
+        "alt":"Fernanda Santos",
+        "text": "Contratei essa marcenaria para reformar a cozinha da minha casa, e o resultado foi além das minhas expectativas. O projeto foi executado com perfeição, cada detalhe foi pensado com cuidado, e a qualidade dos materiais utilizados é incrível. Sem dúvida, recomendo para quem busca um serviço de marcenaria de alto nível."
+      },
+      {
+        "link": "",
+        "image": "acesso-a-especialistas-na-porto-odonto-mobile.jpg",
+        "alt":"Cláudia Silva",
+        "text": "Precisávamos de móveis sob medida para o nosso escritório, e essa marcenaria entregou exatamente o que queríamos. O atendimento foi excepcional desde o início, e o acabamento dos móveis é impecável. Ficamos muito satisfeitos com o profissionalismo e a atenção aos detalhes."
+      }
+    ]
+  },
+
+  "sites-para-gesseiros": {
+    "title": "Sites para Gesseiros",
+    "image": "o-que-oferecemos-baixada-web-studio.jpg",
+    "lists": [
+      {
+        "link": "",
+        "image": "",
+        "alt":"",
+        "text": "Atraia Novos Clientes"
+      },
+      {
+        "link": "",
+        "image": "",
+        "alt":"",
+        "text": "Facilite o contato com clientes"
+      }
+    ]
+  }
+}
