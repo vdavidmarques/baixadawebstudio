@@ -1,13 +1,17 @@
 <?php
+if (
+    $_SERVER['REQUEST_URI'] === '/baixadawebstudio/' ||
+    $_SERVER['REQUEST_URI'] === '/' ||
+    $_SERVER['REQUEST_URI'] === '/?i=1' ||
+    $_SERVER['REQUEST_URI'] === '/?i=2'
+) {
+    require_once 'helpers/get-banner-data.php';
+} else {
+    require_once '../helpers/get-banner-data.php';
+}
 
-    if($_SERVER['REQUEST_URI'] === '/baixadawebstudio/' || $_SERVER['REQUEST_URI'] === '/'){
-        require_once 'helpers/get-banner-data.php';
-    }else{
-        require_once '../helpers/get-banner-data.php';
-    }
-    
-    $bannerData = getBannerData();
-    if ($bannerData): 
+$bannerData = getBannerData();
+if ($bannerData):
 ?>
     <section class="main-banner banners py-20">
         <div class="swiper-container relative">
@@ -26,9 +30,13 @@
             <div
                 class="default-heading-title flex flex-col h-full scroll-effect swiper-content">
                 <h1><?php echo $bannerData['title']; ?></h1>
-                <p>
-                    <?php echo $bannerData['subtitle']; ?>
-                </p>
+                <?php 
+                    if($bannerData['subtitle']):
+                ?>
+                    <p>
+                        <?php echo $bannerData['subtitle']; ?>
+                    </p>
+                <?php endif; ?>
                 <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de web sites"

@@ -1,5 +1,10 @@
 <?php
-if ($_SERVER['REQUEST_URI'] === '/baixadawebstudio/' || $_SERVER['REQUEST_URI'] === '/') {
+if (
+    $_SERVER['REQUEST_URI'] === '/baixadawebstudio/' || 
+    $_SERVER['REQUEST_URI'] === '/' ||
+    $_SERVER['REQUEST_URI'] === '/?i=1' ||
+    $_SERVER['REQUEST_URI'] === '/?i=2'
+    ){
     include 'helpers/get-works-data.php';
 } else {
     include '../helpers/get-works-data.php';

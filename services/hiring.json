@@ -1,21 +1,21 @@
 {
   "index": {
-    "title": "Por Que Ter um Site Profissional?",
-    "subtitle": "Como Funciona",
+    "title": "Por que minha empresa precisa de uma presença online forte?",
+    "subtitle": "",
     "description": "",
     "lists": [
       {
-        "title": "Aumente Sua Visibilidade",
+        "title": "Mais visibilidade, mais clientes! Esteja onde seu público está.",
         "description": "Um site bem construído aumenta sua presença online e atrai mais clientes.",
         "icon": "aumente-sua-visibilidade.svg"
       },
       {
-        "title": "Credibilidade",
+        "title": "Confiança e credibilidade: a base de toda grande marca começa online.",
         "description": "Sites profissionais passam confiança e credibilidade para seus clientes.",
         "icon": "certificate-online-achievement.svg"
       },
       {
-        "title": "Facilidade de Contato",
+        "title": "Conexão direta com seu público: transforme seguidores em fãs e fãs em clientes.",
         "description": "Facilite o contato com seus clientes através de formulários, WhatsApp e redes sociais integradas.",
         "icon": "facilidade-de-contato.svg"
       }

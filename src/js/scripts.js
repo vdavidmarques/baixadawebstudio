@@ -80,7 +80,6 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1.25,
   centeredSlides: true,
   spaceBetween: 30,
-  autoHeight: true,
   autoplay: {
     delay: 7000,
   },
@@ -95,6 +94,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     768: {
       slidesPerView: 1.25,
+      autoHeight: true,
     }
   }
 });

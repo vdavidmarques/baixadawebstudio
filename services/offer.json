@@ -4,29 +4,29 @@
     "image": "o-que-oferecemos-baixada-web-studio.jpg",
     "lists": [
       {
-        "title": "Desenvolvimento de Sites para Marcenarias",
-        "description": "Crie um site profissional para sua marcenaria, destacando seus projetos artesanais e serviços sob medida. Mostre sua expertise em móveis personalizados e atraia novos clientes com um design moderno e funcional.",
-        "button-label": "Exiba seus projetos"
-      },
-      {
-        "title": "Sites Sob Medida para Gesseiros",
-        "description": "Desenvolvemos sites que realçam o talento dos gesseiros. Mostre suas obras com galerias de imagens e depoimentos de clientes satisfeitos, garantindo mais visibilidade para o seu trabalho e novas oportunidades de negócios.",
+        "title": "Gestão de Perfis de Redes Sociais",
+        "description": "Criação e configuração de perfis nas principais redes sociais, como Instagram, Facebook, LinkedIn, e mais.",
         "button-label": "Destaque Seu Trabalho"
       },
       {
-        "title": "Sites para Vidraçarias",
-        "description": "Crie um site que reflita a transparência e a qualidade dos seus serviços de vidraçaria. Apresente seus produtos, como portas, janelas e espelhos, com uma navegação fácil e um design que impressiona.",
-        "button-label": "Apresente Sua Vidraçaria"
-      },
-      {
-        "title": "Sites para Escritórios de Advocacia",
-        "description": "Desenvolva um site profissional para o seu escritório de advocacia, destacando suas áreas de atuação e qualificações. Facilite o contato com clientes e transmita credibilidade desde o primeiro acesso.",
-        "button-label": "Fortaleça Sua Presença Jurídica"
-      },
-      {
-        "title": "Sites para Eletricistas",
-        "description": "Crie um site que destaque sua experiência e competência como eletricista. Apresente seus serviços de forma clara e objetiva, e ofereça aos clientes uma maneira fácil de solicitar orçamentos e agendar visitas.",
+        "title": "Criação de Sites Profissionais",
+        "description": "Desenvolvimento de sites modernos e responsivos, adaptados às necessidades do seu negócio.",
         "button-label": "Ilumine Seu Negócio"
+      },
+      {
+        "title": "Desenvolvimento de Sites para Marcenarias",
+        "description": "Crie um site profissional para sua marcenaria, destacando seus projetos artesanais e serviços sob medida.",
+        "button-label": "Exiba seus projetos"
+      },
+      {
+        "title": "Otimização e Manutenção de Sites",
+        "description": "Análise de desempenho e velocidade do site, com implementações para otimização contínua.",
+        "button-label": "Saiba mais"
+      },
+      {
+        "title": "Criação de Landing Pages",
+        "description": "Desenvolvimento de landing pages focadas em conversão, ideais para campanhas de marketing e captação de leads.",
+        "button-label": "Fortaleça Sua Presença Online"
       }
     ]
   },
