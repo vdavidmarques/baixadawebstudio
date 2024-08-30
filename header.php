@@ -36,7 +36,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
         rel="stylesheet" />
-        
     <?php include 'utils/favicon.php'; ?>
 </head>
 
@@ -44,7 +43,13 @@
     <header>
         <div class="header-menu-itens container">
             <div class="logotype">
-                <a href="/" class="logo"> Baixada Web Studio </a>
+                <a href="/" class="logo">
+                    <img
+                        src="<?php echo $root ?>/library/icons/logo.svg"
+                        alt=""
+                        itemprop="image"
+                        class="ease-in-out" />
+                </a>
             </div>
             <div class="open-menu-mobile">
                 <button onclick="openMenu()" class="bg-menu-mobile">Menu</button>
@@ -86,5 +91,5 @@
         </div>
     </header>
     <main id="content" role="main">
-      <div class="home">
-        <div class="page home">
+        <div class="home">
+            <div class="page home">

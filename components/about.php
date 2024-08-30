@@ -8,32 +8,16 @@
             <div class="content">
                 <div class="scroll-effect">
                     <p>
-                        Na Baixada Web Studio, somos especialistas em web design
-                        dedicados a transformar a presença online de
-                        microempreendedores em algo verdadeiramente impactante.
-                        Com anos de experiência, entendemos as necessidades
-                        específicas dos pequenos negócios e oferecemos soluções
-                        personalizadas que não apenas destacam sua marca, mas
-                        também impulsionam resultados tangíveis.
+                        Não deixe sua empresa desaparecer no meio da multidão. Garanta que sua presença online seja forte, estratégica e capaz de gerar resultados reais. Invista em um site profissional e em uma gestão eficiente de redes sociais para consolidar sua marca no mercado e conquistar novos horizontes.
                     </p>
-                    <p>
-                        Somos uma equipe comprometida em
-                        levar o seu negócio ao próximo nível. Não apenas criamos
-                        sites profissionais e personalizados, mas também
-                        oferecemos estratégias eficazes que garantem visibilidade,
-                        engajamento e crescimento.
-                    </p>
-                    <p>
-                        Nosso foco é 100% em resultados, porque o nosso sucesso só é alcançado quando o
-                        seu negócio atinge o sucesso.
-                    </p>
+                  
                 </div>
 
                 <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de web sites"
                     class="button button-default scroll-effect">
-                    o que podemos fazer por você?
+                    Atraia e Conquiste Mais Clientes
                 </a>
             </div>
         </div>

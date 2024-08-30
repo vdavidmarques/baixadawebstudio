@@ -9,16 +9,14 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 
-  .logo {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: $font-rubik;
-    font-size: 1.875rem;
-    line-height: 2.5rem;
+  @media screen and (min-width: $breakpoint-lg) {
+    padding-bottom: 0;
+  }
 
-    @media screen and (min-width: $breakpoint-lg) {
-      display: flex;
-    }
+  .logo img{
+    width: 15.625rem;
+    height: auto;
+    object-fit: contain;
   }
 
   .logotype,
