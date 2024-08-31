@@ -1,15 +1,15 @@
 <?php
 
-    define('CONTACTFORM_FROM_ADDRESS', 'vdavidmarques@gmail.com');
+    define('CONTACTFORM_FROM_ADDRESS', '');
     define('CONTACTFORM_FROM_NAME', 'Contato de http://baixada-web-studio.great-site.net/');
 
-    define('CONTACTFORM_TO_ADDRESS', 'vdavidmarques@gmail.com');
+    define('CONTACTFORM_TO_ADDRESS', '');
     define('CONTACTFORM_TO_NAME', 'Vinícius Marques');
 
 
     define('CONTACTFORM_SMTP_HOSTNAME', 'smtp.gmail.com');
-    define('CONTACTFORM_SMTP_USERNAME', 'vdavidmarques@gmail.com');
-    define('CONTACTFORM_SMTP_PASSWORD', 'micv hkmx rcmx qxwq');
+    define('CONTACTFORM_SMTP_USERNAME', '');
+    define('CONTACTFORM_SMTP_PASSWORD', '');
 
     define('CONTACTFORM_RECAPTCHA_SITE_KEY', '');
     define('CONTACTFORM_RECAPTCHA_SECRET_KEY', '');
