@@ -11,8 +11,8 @@
     define('CONTACTFORM_SMTP_USERNAME', 'vdavidmarques@gmail.com');
     define('CONTACTFORM_SMTP_PASSWORD', 'micv hkmx rcmx qxwq');
 
-    define('CONTACTFORM_RECAPTCHA_SITE_KEY', '6LfcezMqAAAAAPFYMaWykBn3VB7aB_IhVr5idat2');
-    define('CONTACTFORM_RECAPTCHA_SECRET_KEY', '6LfcezMqAAAAAOpGsTp6zQz-viVYNKAxRIZ6DXL1');
+    define('CONTACTFORM_RECAPTCHA_SITE_KEY', '');
+    define('CONTACTFORM_RECAPTCHA_SECRET_KEY', '');
 
     define('CONTACTFORM_PHPMAILER_DEBUG_LEVEL', 0);
 
