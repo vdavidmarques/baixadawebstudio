@@ -1,5 +1,20 @@
-<?php require_once 'helpers/root-dir.php'; ?>
+<?php 
+    require_once 'helpers/root-dir.php'; 
+    session_start();
 
+    if (isset($_SESSION['message'])):
+?>
+    <div class="alert <?php echo $_SESSION['message_type']; ?> opened">
+        <div class="message">
+            <?php
+                echo $_SESSION['message'];
+                unset($_SESSION['message']); 
+                unset($_SESSION['message_type']);
+            ?>
+            <button class="close-message" onclick="closeMessage()"></button>
+        </div>
+    </div>
+<?php endif; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -37,6 +52,7 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
         rel="stylesheet" />
     <?php include 'utils/favicon.php'; ?>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="home blog">

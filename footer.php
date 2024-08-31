@@ -1,42 +1,51 @@
 </div>
 </div>
 <footer
-    class="my-20"
     role="contentinfo"
     itemscope
     itemtype="http://schema.org/WPFooter">
     <div class="container">
-        <div class="social-networks">
-            <a
-                target="_blank"
-                href="mailto:vdavidmarques@gmail.com"
-                class="scroll-effect">
-                <img
-                    src="<?php echo $root ?>/library/icons/email.svg"
-                    alt=""
-                    itemprop="image"
-                    class="ease-in-out" />
-            </a>
-            <a
-                target="_blank"
-                href="https://www.instagram.com/baixadawebstudio"
-                class="scroll-effect">
-                <img
-                    src="<?php echo $root ?>/library/icons/instagram.svg"
-                    alt=""
-                    itemprop="image"
-                    class="ease-in-out" />
-            </a>
-            <a
-                target="_blank"
-                href="https://www.behance.net/viniciusdavidmarques"
-                class="scroll-effect">
-                <img
-                    src="<?php echo $root ?>/library/icons/behance.svg"
-                    alt=""
-                    itemprop="image"
-                    class="ease-in-out" />
-            </a>
+        <div class="about-me-footer">
+            <div class="content">
+                <p>Na Baixada Web Studio, somos especialistas em web design dedicados a transformar a presença online de microempreendedores em algo verdadeiramente impactante. Com anos de experiência, entendemos as necessidades específicas dos pequenos negócios e oferecemos soluções personalizadas que não apenas destacam sua marca, mas também impulsionam resultados tangíveis.</p>        
+                <div class="social-networks">
+                    <a
+                        target="_blank"
+                        href="mailto:vdavidmarques@gmail.com"
+                        class="scroll-effect">
+                        <img
+                            src="<?php echo $root ?>/library/icons/email.svg"
+                            alt=""
+                            itemprop="image"
+                            class="ease-in-out" />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/baixadawebstudio"
+                        class="scroll-effect">
+                        <img
+                            src="<?php echo $root ?>/library/icons/instagram.svg"
+                            alt=""
+                            itemprop="image"
+                            class="ease-in-out" />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.behance.net/viniciusdavidmarques"
+                        class="scroll-effect">
+                        <img
+                            src="<?php echo $root ?>/library/icons/behance.svg"
+                            alt=""
+                            itemprop="image"
+                            class="ease-in-out" />
+                    </a>
+                </div>
+            </div>
+            <div class="form">
+                <?php 
+                    include $_SERVER['DOCUMENT_ROOT'] . $root . '/components/form.php';          
+                ?>         
+            </div>
         </div>
         <div class="wpp-float">
             <a
@@ -49,7 +58,6 @@
                     itemprop="image" />
             </a>
         </div>
-
         <button class="scroll-to-top-btn" id="scrollToTopBtn">
             Subir para o topo
         </button>
@@ -74,7 +82,9 @@
 <script
     type="text/javascript"
     src="<?php echo $root ?>/library/js/scripts.js"
-    id="script-js-js"></script>
+    id="script-js-js">
+</script>
+
 </body>
 
 </html>

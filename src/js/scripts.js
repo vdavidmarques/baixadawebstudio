@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', handleScroll);
-  handleScroll(); // Trigger once on load to show blocks in view
+  handleScroll();
 });
 
 var swiper = new Swiper(".mySwiper", {
@@ -98,3 +98,10 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+function closeMessage(){
+  var closeMessage = document.querySelectorAll(".alert");
+  closeMessage.forEach(function(item){
+    item.classList.remove("opened");
+  })
+}

@@ -2,6 +2,9 @@
 @import "../helpers/mixins.scss";
 
 footer {
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-top: 6.25rem;
+  }
 
   .after-footer-bg {
     background-color: $blue;
@@ -11,39 +14,71 @@ footer {
     a {
       color: $white;
     }
+
+    .after-footer {
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      
+      @media screen and (min-width: $breakpoint-lg) {
+        flex-direction: row;
+      }
+    }
   }
 
-  .after-footer {
-    font-size: 0.75rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+
+  .about-me-footer  {
+    display: grid;
+    row-gap: 1.25rem;
+    padding-bottom: 5rem;
     
     @media screen and (min-width: $breakpoint-lg) {
-      flex-direction: row;
+      column-gap: 2.5rem;
+      row-gap: 1.25rem;
+    }
+
+    @include grid-cols-12;
+    color: $blue-dark;
+    
+    .content{
+      @include col-span-12;
+      color: $blue;
+
+      @media screen and (min-width: $breakpoint-lg) {
+        @include col-span-6;
+      }
+
+      .social-networks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1.25rem;
+        margin: 2.5rem 0;
+      
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .form{
+      @include col-span-12;
+      @media screen and (min-width: $breakpoint-lg) {
+        @include col-span-6;
+      }
+
+      button{
+        border: inherit;
+        min-width: 9.375rem;
+        cursor: pointer;
+      }
     }
   }
 
-  .social-networks {
-    grid-column: span 12 / span 12;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 1.25rem;
-    margin: 2.5rem 0;
-    
-    @media screen and (min-width: $breakpoint-lg) {
-      grid-column: span 1 / span 1;
-    }
-  
-    img {
-      width: 2.5rem;
-      height: 2.5rem;
-      object-fit: cover;
-    }
-  }
 
   .wpp-float {
     width: 2.5rem;
