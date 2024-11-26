@@ -40,7 +40,7 @@ if ($offerData):
                                         <p><?php echo $offerData['description']; ?></p>
                                         <a
                                             target="_blank"
-                                            href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de sites para marcenaria"
+                                            href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de sites"
                                             class="button button-second">
                                             <?php echo $offerData['button-label']; ?>
                                         </a>

@@ -5,7 +5,7 @@
     itemscope
     itemtype="http://schema.org/WPFooter">
     <div class="container">
-        <div class="about-me-footer">
+        <div class="about-me-footer" id="quem-somos">
             <div class="content">
                 <p>Na Baixada Web Studio, somos especialistas em web design dedicados a transformar a presença online de microempreendedores em algo verdadeiramente impactante. Com anos de experiência, entendemos as necessidades específicas dos pequenos negócios e oferecemos soluções personalizadas que não apenas destacam sua marca, mas também impulsionam resultados tangíveis.</p>        
                 <div class="social-networks">
@@ -67,12 +67,6 @@
             <div id="copyright" itemprop="copyrightHolder">
                 &copy; 2024 Baixada Web Studio
             </div>
-            <a
-                href="https://vdavidmarques.github.io"
-                target="_blank"
-                class="designer">
-                By Vinícius Marques
-            </a>
         </div>
     </div>
 </footer>
