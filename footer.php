@@ -7,7 +7,23 @@
     <div class="container">
         <div class="about-me-footer" id="quem-somos">
             <div class="content">
-                <p>Na Baixada Web Studio, somos especialistas em web design dedicados a transformar a presença online de microempreendedores em algo verdadeiramente impactante. Com anos de experiência, entendemos as necessidades específicas dos pequenos negócios e oferecemos soluções personalizadas que não apenas destacam sua marca, mas também impulsionam resultados tangíveis.</p>        
+                <a href="/" class="logo">
+                    <img
+                        src="<?php echo $root ?>/library/icons/baixada-web-studio-logo-2.png"
+                        alt=""
+                        itemprop="image"
+                        class="image" />
+                        <h1 class="title">BAIXADA<span>WEB STUDIO</span></h1>
+                </a>
+
+                <p>Na Baixada Web Studio, somos especialistas em web design dedicados a transformar a presença online de microempreendedores em algo verdadeiramente impactante. Com anos de experiência, entendemos as necessidades específicas dos pequenos negócios e oferecemos soluções personalizadas que não apenas destacam sua marca, mas também impulsionam resultados tangíveis.</p>
+                
+                <div class="infos">
+                    <h4 class="subtitle">Encontre-nos</h4>
+                    <p class="address">Endereço: Rua Amadeu de Queiroz, Jockey Club - São Vicente/SP</p>
+                    <p class="phone">Telefone: (13) 98826-4181</p>
+                </div>
+
                 <div class="social-networks">
                     <a
                         target="_blank"
@@ -65,7 +81,7 @@
     <div class="after-footer-bg">
         <div class="container after-footer">
             <div id="copyright" itemprop="copyrightHolder">
-                &copy; 2024 Baixada Web Studio
+                &copy; 2024 Baixada Web Studio - CNPJ: 38.131.123/0001-34
             </div>
         </div>
     </div>

@@ -1,11 +1,41 @@
 {
   "index": {
-    "title": "Nossos Clientes",
+    "title": "Portfólio",
     "lists": [
       {
         "link": "https://consultoriavidasegura.com/",
         "image": "consultoria-vida-segura.png",
         "alt":"Consultoria Vida Segura",
+        "text": ""
+      },
+      {
+        "link": "https://vendatec.com.br/",
+        "image": "vendatec.jpg",
+        "alt":"vendatec",
+        "text": "Em construção"
+      },
+      {
+        "link": "http://ubuntuzero13.free.nf/",
+        "image": "ubuntu.jpg",
+        "alt":"Ubuntu Zero 13",
+        "text": ""
+      },
+      {
+        "link": "https://baixada-web-studio.great-site.net/portfolio/",
+        "image": "moonflag.jpg",
+        "alt":"Teste Prático - Moonflag",
+        "text": ""
+      },
+      {
+        "link": "https://www.behance.net/gallery/207318583/Sites-para-marcenarias",
+        "image": "sites-para-marcenarias.jpg",
+        "alt":"Sites para marcenarias",
+        "text": ""
+      },
+      {
+        "link": "https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/YALE-SCHOOL-%C2%ADOF-ART",
+        "image": "yale-school.jpg",
+        "alt":"yale school",
         "text": ""
       },
       {

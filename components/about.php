@@ -10,9 +10,7 @@
                     <p>
                         Não deixe sua empresa desaparecer no meio da multidão. Garanta que sua presença online seja forte, estratégica e capaz de gerar resultados reais. Invista em um site profissional e em uma gestão eficiente de redes sociais para consolidar sua marca no mercado e conquistar novos horizontes.
                     </p>
-                  
                 </div>
-
                 <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de web sites"
