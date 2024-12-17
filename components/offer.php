@@ -16,7 +16,7 @@ if ($offerData):
         <div class="waves wave-1a"></div>
         <div class="container">
             <div class="heading-title scroll-effect" id="o-que-fazemos">
-                <h3><?php echo $offerData['title']; ?></h3>
+                <h2><?php echo $offerData['title']; ?></h2>
             </div>
             <div class="packages">
                 <div class="content scroll-effect">
@@ -36,7 +36,7 @@ if ($offerData):
                                         src="<?php echo $root ?>/library/icons/check.svg"
                                         alt="O que oferecemos" />
                                     <div class="text">
-                                        <h2><?php echo $offerData['title']; ?></h2>
+                                        <h3><?php echo $offerData['title']; ?></h3>
                                         <p><?php echo $offerData['description']; ?></p>
                                         <a
                                             target="_blank"

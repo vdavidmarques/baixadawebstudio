@@ -15,7 +15,7 @@ if ($worksData):
     <section class="works scroll-effect">
         <div class="container">
             <div class="heading-title scroll-effect" id="nossos-clientes">
-                <h3><?php echo $worksData['title']; ?></h3>
+                <h2><?php echo $worksData['title']; ?></h2>
             </div>
             <?php if($worksData['lists']): ?>
                 <div class="lists">

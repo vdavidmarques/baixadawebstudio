@@ -22,6 +22,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Desenvolvimento de landing pages focadas em conversão, ideais para campanhas de marketing e captação de leads.">
+    <meta name="keywords" content="desenvolvimento web, web sites, Site Institucional, Landing Pages">
+    <meta name="author" content="Vinícius Marques">
 
     <style id="safe-svg-svg-icon-style-inline-css" type="text/css">
         .safe-svg-cover {
@@ -46,10 +49,11 @@
 
     <meta name="generator" content="WordPress 6.5.3" />
     <title itemprop="name">Baixada Web Studio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap"
         rel="stylesheet" />
     <?php include 'utils/favicon.php'; ?>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -61,10 +65,11 @@
             <div class="logotype">
                 <a href="/" class="logo">
                     <img
-                        src="<?php echo $root ?>/library/icons/logo.svg"
+                        src="<?php echo $root ?>/library/icons/baixada-web-studio-logo-2.png"
                         alt=""
                         itemprop="image"
-                        class="ease-in-out" />
+                        class="image" />
+                        <span class="title">BAIXADA<span>WEB STUDIO</span></span>
                 </a>
             </div>
             <div class="open-menu-mobile">
