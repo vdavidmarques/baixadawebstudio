@@ -45,9 +45,20 @@ footer {
     .content{
       @include col-span-12;
       color: $blue;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.25rem;
 
       @media screen and (min-width: $breakpoint-lg) {
         @include col-span-6;
+      }
+
+      .subtitle{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: $font-rubik;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
       }
 
       .social-networks {
@@ -55,7 +66,6 @@ footer {
         flex-direction: row;
         align-items: center;
         column-gap: 1.25rem;
-        margin: 2.5rem 0;
       
         img {
           width: 2.5rem;

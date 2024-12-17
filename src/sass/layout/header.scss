@@ -9,16 +9,6 @@
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 
-  @media screen and (min-width: $breakpoint-lg) {
-    padding-bottom: 0;
-  }
-
-  .logo img{
-    width: 15.625rem;
-    height: auto;
-    object-fit: contain;
-  }
-
   .logotype,
   .open-menu-mobile {
     @media screen and (min-width: $breakpoint-lg) {
@@ -101,7 +91,7 @@
         li a {
           text-decoration: none;
           text-transform: uppercase;
-          font-weight: bold;
+          font-weight: 900;
           font-family: $font-rubik;
           font-size: 1rem;
           line-height: 1.875rem;
@@ -109,10 +99,10 @@
     
           @media screen and (min-width: $breakpoint-xl) {
             color: $blue;
+            font-size: 18px;
             
             &:hover{ 
-              font-size: 1rem;
-              color: $blue-dark;
+              color: $blue-medium;
               @include transition-colors;
             }
           }
