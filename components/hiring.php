@@ -13,9 +13,9 @@ $hiringData = getHiringData();
 if ($hiringData):
 ?>
 
-    <section class="hiring container">
+    <section class="hiring container" itemscope itemtype="https://schema.org/ItemList">
         <div class="title scroll-effect" id="beneficios">
-            <h2><?php echo $hiringData['title']; ?></h2>
+            <h2 itemprop="name"><?php echo $hiringData['title']; ?></h2>
             <?php if ($hiringData['subtitle']): ?>
                 <h3><?php echo $hiringData['subtitle']; ?></h3>
             <?php endif; ?>
@@ -24,21 +24,23 @@ if ($hiringData):
             <?php endif; ?>
         </div>
         <?php if ($hiringData['lists']): ?>
+            <meta itemprop="numberOfItems" content="3"> 
             <div class="lists">
                 <?php
                 $count = 0;
                 foreach ($hiringData['lists'] as $hiringData):
                     $count++;
                 ?>
-                    <div class="list scroll-effect list-<?php echo $count; ?>">
+                    <div class="list scroll-effect list-<?php echo $count; ?>" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" content="<?php echo $count; ?>">
                         <div class="icon wave">
                             <img
                                 src="<?php echo $root ?>/library/icons/<?php echo $hiringData['icon'] ?>"
-                                alt="<?php echo $hiringData['title']; ?>" />
+                                alt="<?php echo $hiringData['title']; ?>" itemprop="image" />
                         </div>
                         <div class="content">
-                            <h3 class="content-title"><?php echo $hiringData['title']; ?></h3>
-                            <p>
+                            <h3 class="content-title" itemprop="name"><?php echo $hiringData['title']; ?></h3>
+                            <p itemprop="description">
                                 <?php echo $hiringData['description']; ?>
                             </p>
                         </div>

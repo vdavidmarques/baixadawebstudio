@@ -13,14 +13,18 @@ if (
 $bannerData = getBannerData();
 if ($bannerData):
 ?>
-    <section class="main-banner banners py-20">
+    <section class="main-banner banners py-20" itemscope itemtype="https://schema.org/WebPage">
+        <meta itemprop="name" content="<?php echo $bannerData['cta']; ?>">
+        <meta itemprop="description" content="<?php echo $bannerData['title']; ?>">
         <div class="swiper-container relative">
             <div class="bg-blue-hard-light pointer-events-none">&nbsp;</div>
             <img
                 src="<?php echo $root ?>/library/images/<?php echo $bannerData['image']; ?>"
                 alt="Baixada Web Studio"
                 itemprop="image"
-                class="show-desktop" />
+                class="show-desktop"
+                itemprop="primaryImageOfPage"
+                />
 
             <img
                 src="<?php echo $root ?>/library/images/<?php echo $bannerData['image']; ?>"
@@ -28,19 +32,21 @@ if ($bannerData):
                 itemprop="image"
                 class="show-mobile" />
             <div
-                class="default-heading-title flex flex-col h-full scroll-effect swiper-content">
-                <h1><?php echo $bannerData['title']; ?></h1>
+                class="default-heading-title flex flex-col h-full scroll-effect swiper-content" itemprop="mainEntity" itemscope itemtype="https://schema.org/Service">
+                <h1 itemprop="name"><?php echo $bannerData['title']; ?></h1>
                 <?php 
                     if($bannerData['subtitle']):
                 ?>
-                    <p>
+                    <p itemprop="description">
                         <?php echo $bannerData['subtitle']; ?>
                     </p>
                 <?php endif; ?>
                 <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de web sites"
-                    class="button button-default">
+                    class="button button-default" 
+                    itemprop="url"
+                    >
                     <?php echo $bannerData['cta']; ?>
                 </a>
             </div>

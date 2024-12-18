@@ -5,7 +5,7 @@
         <input type="tel" id="phone" name="phone" required placeholder="Telefone "><br><br>        
         <textarea id="message" name="message" placeholder="Mensagem"></textarea><br><br>
 
-        <div class="g-recaptcha" data-sitekey=""></div> 
+        <div class="g-recaptcha" data-sitekey="6LcSgzMqAAAAAA6ilsJPE4TEYeqP6p3eBFMuw67Y"></div> 
         <button type="submit" class="button button-second">Enviar</button>
     </form>
 </div>

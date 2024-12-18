@@ -1,15 +1,15 @@
-<?php 
-    require_once 'helpers/root-dir.php'; 
-    session_start();
+<?php
+require_once 'helpers/root-dir.php';
+session_start();
 
-    if (isset($_SESSION['message'])):
+if (isset($_SESSION['message'])):
 ?>
     <div class="alert <?php echo $_SESSION['message_type']; ?> opened">
         <div class="message">
             <?php
-                echo $_SESSION['message'];
-                unset($_SESSION['message']); 
-                unset($_SESSION['message_type']);
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+            unset($_SESSION['message_type']);
             ?>
             <button class="close-message" onclick="closeMessage()"></button>
         </div>
@@ -21,9 +21,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="Desenvolvimento de landing pages focadas em conversão, ideais para campanhas de marketing e captação de leads.">
-    <meta name="keywords" content="desenvolvimento web, web sites, Site Institucional, Landing Pages">
+
+    <?php $url_canonical = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
+    <link rel="canonical" href="<?php echo $url_canonical; ?>">
+
+    <meta name="generator" content="WordPress 6.5.3" />
+    <?php
+        if ($_SERVER['REQUEST_URI'] === '/') {
+            $text = 'seu negócio';
+            $desc = 'Especializados em desenvolvimento de sites profissionais para diversos setores. Mostre seus melhores projetos e inspire confiança nos visitantes. Fotos de alta qualidade';
+        }elseif($_SERVER['REQUEST_URI'] === '/sites-para-marcenarias/'){
+            $text = 'Marcenarias';
+            $desc = 'Desenvolvemos sites personalizados para marcenarias, destacando seus serviços e portfólio. Mostre seus melhores projetos e inspire confiança nos visitantes.';
+        }
+    ?>
+    <title itemprop="name">Baixada Web Studio - Desenvolvimento de Sites para <?php echo $text; ?> </title>
+
+    <meta name="description" content="<?php echo $desc; ?>">
+    <meta name="keywords" content="desenvolvimento web, web sites, Site Institucional, Landing Pages, desenvolvimento web marcenarias, sites para marcenarias">
     <meta name="author" content="Vinícius Marques">
 
     <style id="safe-svg-svg-icon-style-inline-css" type="text/css">
@@ -44,11 +59,9 @@
         }
     </style>
 
+
     <link rel="stylesheet" href="<?php echo $root ?>/library/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <meta name="generator" content="WordPress 6.5.3" />
-    <title itemprop="name">Baixada Web Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,7 +82,7 @@
                         alt=""
                         itemprop="image"
                         class="image" />
-                        <span class="title">BAIXADA<span>WEB STUDIO</span></span>
+                    <span class="title">BAIXADA<span>WEB STUDIO</span></span>
                 </a>
             </div>
             <div class="open-menu-mobile">

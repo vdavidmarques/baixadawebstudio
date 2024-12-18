@@ -12,32 +12,36 @@ if (
 $offerData = getOfferData();
 if ($offerData):
 ?>
-    <section class="offer">
+    <section class="offer" itemscope itemtype="https://schema.org/Service">
         <div class="waves wave-1a"></div>
         <div class="container">
             <div class="heading-title scroll-effect" id="o-que-fazemos">
-                <h2><?php echo $offerData['title']; ?></h2>
+                <h2 itemprop="name"><?php echo $offerData['title']; ?></h2>
+                <?php if(isset($offerData['description']) && !empty($offerData['description'])): ?>
+                    <meta itemprop="description" content="<?php echo $offerData['description']; ?>">
+                <?php endif; ?>
             </div>
             <div class="packages">
-                <div class="content scroll-effect">
+                <div class="content scroll-effect"  itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
                     <img
                         src="<?php echo $root ?>/library/images/<?php echo $offerData['image']; ?>"
                         alt="<?php echo $offerData['title']; ?>- Baixada web studio"
-                        class="image-content ease-in-out" />
+                        class="image-content ease-in-out" itemprop="contentUrl"/>
+                        <meta itemprop="url" content="<?php echo $root ?>/library/images/<?php echo $offerData['image']; ?>">
                 </div>
-                <div class="package scroll-effect swiper mySwiper">
+                <div class="package scroll-effect swiper mySwiper" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="swiper-button-next"></div>
                     <div class="options swiper-wrapper">
                         <?php if ($offerData['lists']):
                             foreach ($offerData['lists'] as $offerData):
                         ?>
-                                <article class="option swiper-slide">
+                                <article class="option swiper-slide" itemscope itemtype="https://schema.org/Offer">
                                     <img
                                         src="<?php echo $root ?>/library/icons/check.svg"
                                         alt="O que oferecemos" />
                                     <div class="text">
-                                        <h3><?php echo $offerData['title']; ?></h3>
-                                        <p><?php echo $offerData['description']; ?></p>
+                                        <h3 itemprop="name"><?php echo $offerData['title']; ?></h3>
+                                        <p itemprop="description"><?php echo $offerData['description']; ?></p>
                                         <a
                                             target="_blank"
                                             href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de sites"
