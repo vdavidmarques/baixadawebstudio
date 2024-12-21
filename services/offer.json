@@ -2,6 +2,7 @@
   "index": {
     "title": "O Que fazemos?",
     "image": "o-que-oferecemos-baixada-web-studio.jpg",
+    "image-webp": "o-que-oferecemos-baixada-web-studio",
     "lists": [
       {
         "title": "Web sites para oficinas automotivas",
@@ -34,6 +35,7 @@
   "sites-para-marcenarias": {
     "title": "Mostre os Serviços Oferecidos",
     "image": "servicos-de-marcenaria.jpg",
+    "image-webp": "servicos-de-marcenaria",
     "lists": [
       {
         "title": "Móveis Planejados",
@@ -56,6 +58,7 @@
   "sites-para-gesseiros": {
     "title": "Sites para Gesseiros",
     "image": "o-que-oferecemos-baixada-web-studio.jpg",
+    "image-webp": "o-que-oferecemos-baixada-web-studio",
     "lists": [
       {
         "title": "Atraia Novos Clientes",

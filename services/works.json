@@ -5,43 +5,50 @@
       {
         "link": "https://consultoriavidasegura.com/",
         "image": "consultoria-vida-segura.png",
-        "alt":"Consultoria Vida Segura",
+        "image-webp": "consultoria-vida-segura",
+        "alt": "Consultoria Vida Segura",
         "text": ""
       },
       {
         "link": "https://vendatec.com.br/",
         "image": "vendatec.jpg",
-        "alt":"vendatec",
+        "image-webp": "vendatec",
+        "alt": "Vendatec",
         "text": "Em construção"
       },
       {
         "link": "http://ubuntuzero13.free.nf/",
         "image": "ubuntu.jpg",
-        "alt":"Ubuntu Zero 13",
+        "image-webp": "ubuntu",
+        "alt": "Ubuntu Zero 13",
         "text": ""
       },
       {
         "link": "https://baixada-web-studio.great-site.net/portfolio/",
         "image": "moonflag.jpg",
-        "alt":"Teste Prático - Moonflag",
+        "image-webp": "moonflag",
+        "alt": "Teste Prático - Moonflag",
         "text": ""
       },
       {
         "link": "https://www.behance.net/gallery/207318583/Sites-para-marcenarias",
         "image": "sites-para-marcenarias.jpg",
-        "alt":"Sites para marcenarias",
+        "image-webp": "sites-para-marcenarias",
+        "alt": "Sites para marcenarias",
         "text": ""
       },
       {
         "link": "https://www.figma.com/file/rnX2TausVQWrb9xW3OUl16/YALE-SCHOOL-%C2%ADOF-ART",
         "image": "yale-school.jpg",
-        "alt":"yale school",
+        "image-webp": "yale-school",
+        "alt": "Yale School of Art",
         "text": ""
       },
       {
         "link": "https://vdavidmarques.github.io/portfolio/php/cloudaitech/",
         "image": "cloudtechai.jpg",
-        "alt":"CloudTech Ai",
+        "image-webp": "cloudtechai",
+        "alt": "CloudTech Ai",
         "text": ""
       }
     ]
@@ -53,12 +60,14 @@
       {
         "link": "",
         "image": "cobertura-de-tratamentos-sulamerica.jpg",
+        "image-webp": "cobertura-de-tratamentos-sulamerica",
         "alt":"Fernanda Santos",
         "text": ""
       },
       {
         "link": "",
         "image": "acesso-a-especialistas-na-porto-odonto-mobile.jpg",
+        "image-webp": "acesso-a-especialistas-na-porto-odonto-mobile",
         "alt":"Cláudia Silva",
         "text": "Precisávamos de móveis sob medida para o nosso escritório, e essa marcenaria entregou exatamente o que queríamos. O atendimento foi excepcional desde o início, e o acabamento dos móveis é impecável. Ficamos muito satisfeitos com o profissionalismo e a atenção aos detalhes."
       }
@@ -68,6 +77,7 @@
   "sites-para-gesseiros": {
     "title": "Sites para Gesseiros",
     "image": "o-que-oferecemos-baixada-web-studio.jpg",
+    "image-webp": "o-que-oferecemos-baixada-web-studio",
     "lists": [
       {
         "link": "",

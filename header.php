@@ -70,13 +70,17 @@ if (isset($_SESSION['message'])):
         rel="stylesheet" />
     <?php include 'utils/favicon.php'; ?>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Created to preloading image and make LCP better(page speed) -->
+    <link rel="preload" as="image" href="https://baixada-web-studio.great-site.net//library/images/o-que-oferecemos-baixada-web-studio.webp" />
+
 </head>
 
 <body class="home blog">
     <header>
         <div class="header-menu-itens container">
             <div class="logotype">
-                <a href="/" class="logo">
+                <a href="/" class="logo" aria-label="Baixada Web Studio - Desenvolvimento de sites profissionais para diversos setores">
                     <img
                         src="<?php echo $root ?>/library/icons/baixada-web-studio-logo-2.png"
                         alt=""
@@ -94,25 +98,25 @@ if (isset($_SESSION['message'])):
                         <ul id="custom-header-menu" class="main-menu">
                             <li
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143">
-                                <a href="#quem-somos">Quem Somos</a>
+                                <a aria-label="Quem Somos" href="#quem-somos">Quem Somos</a>
                             </li>
                             <li
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-144">
-                                <a href="#beneficios">Benefícios</a>
+                                <a aria-label="Benefícios" href="#beneficios">Benefícios</a>
                             </li>
                             <li
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145">
-                                <a href="#o-que-fazemos">O que fazemos?</a>
+                                <a aria-label="O que fazemos?" href="#o-que-fazemos">O que fazemos?</a>
                             </li>
                             <li
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145">
-                                <a href="#nossos-clientes">Nossos Clientes</a>
+                                <a aria-label="Nossos Clientes" href="#nossos-clientes">Nossos Clientes</a>
                             </li>
                             <li
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147">
                                 <a
                                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Ol%C3%A1,%20achei%20seu%20contato%20atrav%C3%A9s%20do%20site%20da%20Baixada%20Web%20Studio.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20desenvolvimento%20de%20web%20sites"
-                                    target="_blank">Contato</a>
+                                    target="_blank" aria-label="Contato">Contato</a>
                             </li>
                         </ul>
                     </div>

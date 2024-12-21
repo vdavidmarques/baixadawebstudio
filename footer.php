@@ -4,7 +4,7 @@
     <div class="container">
         <div class="about-me-footer" id="quem-somos" itemscope itemtype="https://schema.org/LocalBusiness">
             <div class="content">
-                <a href="/" class="logo">
+                <a href="/" class="logo" aria-label="Baixada Web Studio - Desenvolvimento de sites profissionais para diversos setores">
                     <img src="<?php echo $root ?>/library/icons/baixada-web-studio-logo-2.png" alt="" itemprop="image" class="image">
                     <h1 class="title" itemprop="name">BAIXADA<span>WEB STUDIO</span></h1>
                 </a>
@@ -20,14 +20,17 @@
 
                 </div>
                 <div class="social-networks">
-                    <a target="_blank" href="mailto:vdavidmarques@gmail.com" class="scroll-effect">
+                    <a target="_blank" href="mailto:vdavidmarques@gmail.com" class="scroll-effect" aria-label="E-mail - Baixada Web Studio">
                         <img src="<?php echo $root ?>/library/icons/email.svg" alt="" itemprop="image" class="ease-in-out">
                     </a>
-                    <a target="_blank" href="https://www.instagram.com/baixadawebstudio" class="scroll-effect">
+                    <a target="_blank" href="https://www.linkedin.com/company/baixada-web-studio" class="scroll-effect" aria-label="Linkedin - Baixada Web Studio">
+                        <img src="<?php echo $root ?>/library/icons/linkedin.svg" alt="" itemprop="image" class="ease-in-out">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/baixadawebstudio" class="scroll-effect" aria-label=" Instagram - Baixada Web Studio">
                         <img src="<?php echo $root ?>/library/icons/instagram.svg" alt="" itemprop="image" class="ease-in-out">
 
                     </a>
-                    <a target="_blank" href="https://www.behance.net/viniciusdavidmarques" class="scroll-effect">
+                    <a target="_blank" href="https://www.behance.net/viniciusdavidmarques" class="scroll-effect" aria-label="Behance - Baixada Web Studio">
                         <img src="<?php echo $root ?>/library/icons/behance.svg" alt="" itemprop="image" class="ease-in-out">
                     </a>
                 </div>
@@ -40,7 +43,7 @@
 
 
         <div class="wpp-float">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=5513988264181&text=Ol%C3%A1,%20achei%20seu%20contato%20atrav%C3%A9s%20do%20site%20da%20Baixada%20Web%20Studio.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20desenvolvimento%20de%20web%20sites">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5513988264181&text=Ol%C3%A1,%20achei%20seu%20contato%20atrav%C3%A9s%20do%20site%20da%20Baixada%20Web%20Studio.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20desenvolvimento%20de%20web%20sites" aria-label="WhatsApp - Baixada Web Studio">
                 <img src="<?php echo $root ?>/library/icons/whatsapp.svg" alt="WhatsApp - Baixada Web Studio" class="ease-in-out" itemprop="image">
             </a>
         </div>

@@ -23,11 +23,14 @@ if ($offerData):
             </div>
             <div class="packages">
                 <div class="content scroll-effect"  itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                    <img
-                        src="<?php echo $root ?>/library/images/<?php echo $offerData['image']; ?>"
-                        alt="<?php echo $offerData['title']; ?>- Baixada web studio"
-                        class="image-content ease-in-out" itemprop="contentUrl"/>
-                        <meta itemprop="url" content="<?php echo $root ?>/library/images/<?php echo $offerData['image']; ?>">
+                    <picture>
+                        <source srcset="<?php echo $root ?>/library/images/<?php echo  $offerData['image-webp']; ?>.webp" type="image/webp">
+                            <img
+                                src="<?php echo $root ?>/library/images/<?php echo $offerData['image']; ?>"
+                                alt="<?php echo $offerData['title']; ?>- Baixada web studio"
+                                class="image-content ease-in-out" itemprop="contentUrl"/>
+                                <meta itemprop="url" content="<?php echo $root ?>/library/images/<?php echo $offerData['image']; ?>">
+                    </picture>
                 </div>
                 <div class="package scroll-effect swiper mySwiper" itemscope itemtype="https://schema.org/OfferCatalog">
                     <div class="swiper-button-next"></div>
@@ -45,7 +48,8 @@ if ($offerData):
                                         <a
                                             target="_blank"
                                             href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de sites"
-                                            class="button button-second">
+                                            class="button button-second"
+                                            aria-label="<?php echo $offerData['button-label']; ?>">
                                             <?php echo $offerData['button-label']; ?>
                                         </a>
                                     </div>

@@ -14,7 +14,9 @@
                 <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de web sites"
-                    class="button button-default scroll-effect">
+                    class="button button-default scroll-effect"
+                    aria-label="Atraia e Conquiste Mais Clientes"
+                    >
                     Atraia e Conquiste Mais Clientes
                 </a>
             </div>

@@ -18,19 +18,17 @@ if ($bannerData):
         <meta itemprop="description" content="<?php echo $bannerData['title']; ?>">
         <div class="swiper-container relative">
             <div class="bg-blue-hard-light pointer-events-none">&nbsp;</div>
-            <img
-                src="<?php echo $root ?>/library/images/<?php echo $bannerData['image']; ?>"
-                alt="Baixada Web Studio"
-                itemprop="image"
-                class="show-desktop"
-                itemprop="primaryImageOfPage"
-                />
-
-            <img
-                src="<?php echo $root ?>/library/images/<?php echo $bannerData['image']; ?>"
-                alt=""
-                itemprop="image"
-                class="show-mobile" />
+            <picture>
+                <source srcset="<?php echo $root ?>/library/images/<?php echo $bannerData['image-webp']; ?>.webp" type="image/webp">
+                <img
+                    src="<?php echo $root ?>/library/images/<?php echo $bannerData['image']; ?>"
+                    alt="Desenvolvimento de sites modernos e responsivos, adaptados às necessidades do seu negócio."
+                    itemprop="image"
+                    class="show-desktop"
+                    itemprop="primaryImageOfPage"
+                    />
+            </picture>
+          
             <div
                 class="default-heading-title flex flex-col h-full scroll-effect swiper-content" itemprop="mainEntity" itemscope itemtype="https://schema.org/Service">
                 <h1 itemprop="name"><?php echo $bannerData['title']; ?></h1>
@@ -46,6 +44,7 @@ if ($bannerData):
                     href="https://api.whatsapp.com/send?phone=5513988264181&text=Olá, achei seu contato através do site da Baixada Web Studio. Gostaria de mais informações sobre desenvolvimento de web sites"
                     class="button button-default" 
                     itemprop="url"
+                    aria-label="Contato através do WhatsApp"
                     >
                     <?php echo $bannerData['cta']; ?>
                 </a>

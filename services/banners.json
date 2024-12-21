@@ -3,18 +3,21 @@
       "title": "Se você não está online, está perdendo clientes. Vamos mudar isso!",
       "subtitle": "",
       "image": "o-que-oferecemos-baixada-web-studio.jpg",
+      "image-webp": "o-que-oferecemos-baixada-web-studio",
       "cta": "Fortaleça sua Marca Online"
     },
     "sites-para-marcenarias": {
       "title": "Sites Profissionais para Marcenarias",
       "subtitle": "Alcance mais clientes e destaque-se no mercado com uma presença online forte e impactante.",
       "image": "o-que-oferecemos-baixada-web-studio.jpg",
+      "image-webp": "o-que-oferecemos-baixada-web-studio",
       "cta": "Veja Nossos Projetos"
     },
     "sites-para-gesseiros": {
       "title": "Sites para Gesseiros",
       "subtitle": "Desenvolvimento Web para Profissionais da Construção",
       "image": "gesseiros-banner.jpg",
+      "image-webp": "gesseiros-banner",
       "cta": "Confira as Vantagens"
     }
   }
